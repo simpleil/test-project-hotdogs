@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+	src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+	url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansSemiBold";
+	src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+	src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+	url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNova-Semibold";
+	src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
+	src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"),
+	url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	margin: 0;
+	padding: 0;
+	.headerImg {
+		min-height: 499px;
+		background: url('../img/hotBG.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.main {
+		background-color: #fbfafa;
+		header {
+			text-align: center;
+			background-color: #ffffff;
+			ul{
+				li{
+					display: inline-block;
+					padding: 45px 40px 40px;
+					a {
+						font-family: 'OpenSansSemiBold';
+						font-size: 20px;
+						color: #2e2e2e;
+						text-transform: uppercase;
+						text-decoration: none;
+						letter-spacing: 3px;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+		.mainHeader {
+			margin-top: 110px;
+			text-align: center;
+			h1 {
+				margin-top: 35px;
+				font-family: 'OpenSansLight';
+				font-size: 55.94px;
+				font-weight: normal;
+				color: #555559;
+				margin-bottom: 80px;
+				letter-spacing: -2px;
+			}
+			a {
+				display: inline-block;
+				padding: 20px 33px 20px 35px;
+				background-color: #286782;
+				color: #ffffff;
+				font-size: 20px;
+				font-family: 'OpenSansSemiBold';
+				font-weight: normal;
+				text-decoration: none;
+				border-radius: 6px;
+				margin-bottom: 170px;
+			}
+		}
+	}
+	.hotdogsVariety {
+		background-color: #ffffff;
+		.container {
+			margin: 0 auto;
+			text-align: center;
+			max-width: 1440px;
+			width: 100%;
+			.text {
+				padding: 220px 148px 225px 130px;
+				width: 50%; 
+				max-width: 720px;
+				position: relative;
+				h5 {
+					font-family: 'OpenSansBold';
+					font-size: 23.97px;
+					font-weight: normal;
+					color: #555559;
+					margin-bottom: 30px;
+					letter-spacing: -1px;
+				}
+				h5::before {
+					content: "";
+				   width: 31px;
+				   height: 3px;
+				   background-color: #286782;
+				   position: absolute;
+				   top: 41%;
+				   left: 10.78%;
+			}
+
+				p {
+					font-family: 'OpenSansLight';
+					font-size: 17.98px;
+					font-weight: normal;
+					color: #555559; 
+					letter-spacing: -1px;
+				}
+			}
+			.vegan h5::before, .vegitarian h5::before {
+				background-color: #84959c;
+			}
+			.content {
+				float: left;
+				width: 50%;
+				height: 576px;
+			}
+			.imgBeef {
+				background: url('../img/BeefHotdogs.jpg');
+				background-repeat: no-repeat;
+			} 
+			.imgVegan {
+				background: url('../img/VeganHotdogs.jpg');
+				background-repeat: no-repeat;
+			}
+			.imgVegitarian {
+				background: url('../img/VegitarianHotdogs.jpg');
+				background-repeat: no-repeat;
+			}
+		}	
+	}
+	.hotdogsVariety.clearfix::after {
+			content: " ";
+			display: table;
+			clear: both;
+	}
+	footer {
+		width: 100%;
+		background: #efefef;
+		padding: 30px 20px 30px;
+		height: 74px;
+		.policy {
+			float: left;
+		}
+		.contactUs {
+			float: right;
+		}
+		p {
+			font-family: 'OpenSansRegular';
+			font-size: 14px;
+			color: #555559;
+		}
+	}
+}
+
+@media screen and (min-width:992px) and (max-width:1169px) {
+	.wrapper {
+		.hotdogsVariety {
+			.text {
+				padding: 110px 50px 70px 100px;
+				h5::before {
+					top: 31%;
+				   left: 10.78%;
+				}
+			}
+			.content {
+				height: 396px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width:771px) and (max-width:992px) {
+	.wrapper {
+		.hotdogsVariety {
+			.text {
+				padding: 70px 50px 50px 100px;
+				p {
+					font-size: 24px;
+				}
+				h5::before {
+					top: 21%;
+				   left: 10.78%;
+				}
+			}
+			.content {
+				height: 396px;
+			}
+		}
+	}
+}
+
+ @media screen and (max-width:770px) {
+  .wrapper {
+  		.main {
+			header {
+				text-align: center;
+				padding: 10px 0;
+				ul{
+					li{
+						display: block;
+						padding: 10px 40px 10px;
+					}
+				}
+			}
+			.mainHeader {
+				margin-top: 70px;
+				a {
+					margin-bottom: 70px;
+				}
+			}
+		}
+		
+  		.hotdogsVariety {
+  			margin-left: 15px !important;
+  			width: 100%;
+	  		.content {
+				width: 100%;
+		   }
+		   .imgBeef, .imgVegan, .imgVegitarian {
+		   	text-align: center;
+		   	width: 100%;
+		   	height: 350px;
+		   }
+		   .text {
+				padding: 20px 30px 20px 25px;
+				height: 100%;
+				text-align: center;
+				p {
+					font-size: 24px;
+				}
+				h5::before {
+					display: none;
+				}
+			}
+		}
+		
+		footer {
+			text-align: center;
+			background: #efefef;
+			height: 100%;
+			.policy, .contactUs {
+				float: none;
+			}
+		}
+	}
+}
+
+
+
+
