@@ -51,12 +51,38 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.wrapper .headerImg .headerShadow {
+  position: relative;
+  height: 150px;
+  background: -webkit-linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0));
+  /* Standard syntax */
+}
+.wrapper .headerImg .headerShadow .instagram {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+.wrapper .headerImg .headerShadow .instagram h2 {
+  color: #ffffff;
+  font-size: 15.24px;
+  font-family: 'ProximaNova-Semibold';
+  display: inline-block;
+}
 .wrapper .main {
   background-color: #fbfafa;
 }
 .wrapper .main header {
   text-align: center;
   background-color: #ffffff;
+}
+.wrapper .main header ul {
+  box-shadow: 0px 5px 7px rgba(232, 231, 231, 0.8);
 }
 .wrapper .main header ul li {
   display: inline-block;
@@ -74,6 +100,7 @@
   text-decoration: underline;
 }
 .wrapper .main .mainHeader {
+  background-color: #fbfafa;
   margin-top: 110px;
   text-align: center;
 }
@@ -103,7 +130,6 @@
 }
 .wrapper .hotdogsVariety .container {
   margin: 0 auto;
-  text-align: center;
   max-width: 1440px;
   width: 100%;
 }
@@ -181,33 +207,43 @@
   color: #555559;
 }
 @media screen and (min-width: 992px) and (max-width: 1169px) {
-  .wrapper .hotdogsVariety .text {
+  .wrapper .hotdogsVariety .container .text {
     padding: 110px 50px 70px 100px;
   }
-  .wrapper .hotdogsVariety .text h5::before {
+  .wrapper .hotdogsVariety .container .text h5::before {
     top: 31%;
     left: 10.78%;
   }
-  .wrapper .hotdogsVariety .content {
+  .wrapper .hotdogsVariety .container .content {
     height: 396px;
   }
 }
 @media screen and (min-width: 771px) and (max-width: 992px) {
-  .wrapper .hotdogsVariety .text {
+  .wrapper .hotdogsVariety .container .text {
     padding: 70px 50px 50px 100px;
   }
-  .wrapper .hotdogsVariety .text p {
+  .wrapper .hotdogsVariety .container .text p {
     font-size: 24px;
   }
-  .wrapper .hotdogsVariety .text h5::before {
+  .wrapper .hotdogsVariety .container .text h5::before {
     top: 21%;
     left: 10.78%;
   }
-  .wrapper .hotdogsVariety .content {
+  .wrapper .hotdogsVariety .container .content {
     height: 396px;
   }
 }
 @media screen and (max-width: 770px) {
+  .wrapper .headerImg {
+    min-height: 250px;
+  }
+  .wrapper .headerImg .headerShadow {
+    text-align: center;
+    padding-top: 35px;
+  }
+  .wrapper .headerImg .headerShadow .instagram {
+    position: static;
+  }
   .wrapper .main header {
     text-align: center;
     padding: 10px 0;
@@ -219,32 +255,35 @@
   .wrapper .main .mainHeader {
     margin-top: 70px;
   }
+  .wrapper .main .mainHeader h1 {
+    padding: 10px 20px;
+    font-size: 40px;
+  }
   .wrapper .main .mainHeader a {
     margin-bottom: 70px;
   }
   .wrapper .hotdogsVariety {
-    margin-left: 15px !important;
     width: 100%;
   }
-  .wrapper .hotdogsVariety .content {
+  .wrapper .hotdogsVariety .container .content {
     width: 100%;
   }
-  .wrapper .hotdogsVariety .imgBeef,
-  .wrapper .hotdogsVariety .imgVegan,
-  .wrapper .hotdogsVariety .imgVegitarian {
+  .wrapper .hotdogsVariety .container .imgBeef,
+  .wrapper .hotdogsVariety .container .imgVegan,
+  .wrapper .hotdogsVariety .container .imgVegitarian {
     text-align: center;
     width: 100%;
     height: 350px;
   }
-  .wrapper .hotdogsVariety .text {
+  .wrapper .hotdogsVariety .container .text {
     padding: 20px 30px 20px 25px;
     height: 100%;
     text-align: center;
   }
-  .wrapper .hotdogsVariety .text p {
+  .wrapper .hotdogsVariety .container .text p {
     font-size: 24px;
   }
-  .wrapper .hotdogsVariety .text h5::before {
+  .wrapper .hotdogsVariety .container .text h5::before {
     display: none;
   }
   .wrapper footer {

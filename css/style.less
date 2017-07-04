@@ -57,13 +57,33 @@
 		background: url('../img/hotBG.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
+		.headerShadow {
+			position: relative;
+			height: 150px;
+			background: -webkit-linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0)); /* For Safari 5.1 to 6.0 */
+		   background: -o-linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0)); /* For Opera 11.1 to 12.0 */
+		   background: -moz-linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0)); /* For Firefox 3.6 to 15 */
+		   background: linear-gradient(rgba(70, 80, 80, 0.7), rgba(240, 239, 239, 0)); /* Standard syntax */;
+			.instagram {
+				position: absolute;
+				top: 12px;
+				right: 20px;
+				h2 {
+					color: #ffffff;
+					font-size: 15.24px;
+					font-family: 'ProximaNova-Semibold';
+					display: inline-block;
+				}
+			}
+		}
 	}
 	.main {
 		background-color: #fbfafa;
-		header {
+			header {
 			text-align: center;
 			background-color: #ffffff;
 			ul{
+				box-shadow: 0px 5px 7px  rgba(232, 231, 231, 0.8);
 				li{
 					display: inline-block;
 					padding: 45px 40px 40px;
@@ -82,6 +102,7 @@
 			}
 		}
 		.mainHeader {
+			background-color: #fbfafa;
 			margin-top: 110px;
 			text-align: center;
 			h1 {
@@ -111,7 +132,6 @@
 		background-color: #ffffff;
 		.container {
 			margin: 0 auto;
-			text-align: center;
 			max-width: 1440px;
 			width: 100%;
 			.text {
@@ -194,15 +214,17 @@
 @media screen and (min-width:992px) and (max-width:1169px) {
 	.wrapper {
 		.hotdogsVariety {
-			.text {
-				padding: 110px 50px 70px 100px;
-				h5::before {
-					top: 31%;
-				   left: 10.78%;
+			.container {
+				.text {
+					padding: 110px 50px 70px 100px;
+					h5::before {
+						top: 31%;
+					   left: 10.78%;
+					}
 				}
-			}
-			.content {
-				height: 396px;
+				.content {
+					height: 396px;
+				}
 			}
 		}
 	}
@@ -211,18 +233,20 @@
 @media screen and (min-width:771px) and (max-width:992px) {
 	.wrapper {
 		.hotdogsVariety {
-			.text {
-				padding: 70px 50px 50px 100px;
-				p {
-					font-size: 24px;
+			.container{
+				.text {
+					padding: 70px 50px 50px 100px;
+					p {
+						font-size: 24px;
+					}
+					h5::before {
+						top: 21%;
+					   left: 10.78%;
+					}
 				}
-				h5::before {
-					top: 21%;
-				   left: 10.78%;
+				.content {
+					height: 396px;
 				}
-			}
-			.content {
-				height: 396px;
 			}
 		}
 	}
@@ -230,6 +254,16 @@
 
  @media screen and (max-width:770px) {
   .wrapper {
+  		.headerImg {
+			min-height: 250px;
+			.headerShadow {
+				text-align: center;
+				padding-top: 35px;
+				.instagram {
+					position: static;
+				}
+			}
+		}
   		.main {
 			header {
 				text-align: center;
@@ -243,33 +277,38 @@
 			}
 			.mainHeader {
 				margin-top: 70px;
+				h1 {
+					padding: 10px 20px;
+					font-size: 40px;
+				}
 				a {
 					margin-bottom: 70px;
 				}
 			}
 		}
 		
-  		.hotdogsVariety {
-  			margin-left: 15px !important;
-  			width: 100%;
-	  		.content {
-				width: 100%;
-		   }
-		   .imgBeef, .imgVegan, .imgVegitarian {
-		   	text-align: center;
-		   	width: 100%;
-		   	height: 350px;
-		   }
-		   .text {
-				padding: 20px 30px 20px 25px;
-				height: 100%;
-				text-align: center;
-				p {
-					font-size: 24px;
-				}
-				h5::before {
-					display: none;
-				}
+	  		.hotdogsVariety {
+	  			width: 100%;
+	  			.container {
+			  		.content {
+						width: 100%;
+				   	}
+				   .imgBeef, .imgVegan, .imgVegitarian {
+				   	text-align: center;
+				   	width: 100%;
+				   	height: 350px;
+				   }
+				   .text {
+						padding: 20px 30px 20px 25px;
+						height: 100%;
+						text-align: center;
+						p {
+							font-size: 24px;
+						}
+						h5::before {
+							display: none;
+						}
+					}		
 			}
 		}
 		
